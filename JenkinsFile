@@ -1,10 +1,41 @@
 pipeline{
-	agent any
-	stages{
-		stage('Hello'){
-			steps{
-				echo "HOLA"
-			}
-		}
-	}
+
+    agent any
+
+    
+
+    
+
+    stages{
+
+        stage('operacion'){
+
+            steps{
+
+                script{
+
+                    
+
+                    def num1=1;
+
+                    def num2=2;
+
+                    println (num1+num2)
+
+                    println (num1-num2)
+
+                    println (num1/num2)
+
+                    println (num1*num2)
+
+                }
+
+            }
+
+            
+
+        }
+
+    }
+
 }
