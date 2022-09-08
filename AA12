@@ -1,0 +1,53 @@
+import java.time.LocalDate
+pipeline {
+    agent any
+    stages {
+        stage('mostrarFecha') {
+            steps {
+                script{
+                   LocalDate fechaHoy=LocalDate.now()
+                   println 'Hoy es '+fechaHoy
+                   switch(fechaHoy.getDayOfWeek()){
+                       case 'MONDAY':
+                           stage('Chiste de futbol'){
+                               script{
+                                   println 'ESTO ES UN CHISTE DE FUTBOL'
+                               }
+                           }
+                        break;
+                        case 'TUESDAY':
+                           stage('Chiste de politica'){
+                               script{
+                                   println 'ESTO ES UN CHISTE DE POLITICA'
+                               }
+                           }
+                        break;
+                        case 'WEDNESDAT':
+                           stage('Chiste de medicos'){
+                               script{
+                                   println 'ESTO ES UN CHISTE DE MEDICOS'
+                               }
+                           }
+                        break;
+                        case 'THURSDAY':
+                           stage('Chiste de informaticos'){
+                               script{
+                                   println 'ESTO ES UN CHISTE DE INFORMATICOS'
+                               }
+                           }
+                        break;
+                        case 'FRIDAY':
+                           stage('Chiste de humor negro'){
+                               script{
+                                   println 'ESTO ES UN CHISTE DE HUMOR NEGRO'
+                               }
+                           }
+                        break;
+                        
+                   }
+                }
+            }
+        }
+        
+    }
+}
