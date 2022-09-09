@@ -1,17 +1,17 @@
 pipeline{
-  agent any
-  stages{
-    stage('Saludo'){
-      steps{
-        script{ 
-          def fecha = LocalDate.now()
-          def saludo = 'Hola Mundo! EL día de hoy es ' + fecha.getDayOfWeek() 
-          def texto = 'Este curso me hizo programar mas de lo que me hubiese gustado' 
-          println saludo 
-          println texto 
-                }
-          }
-      }
-    }
+agent any
+stages{
+stage('Saludo'){
+steps{
+script{ 
+def fecha = LocalDate.now()
+def saludo = 'Hola Mundo! EL día de hoy es ' + fecha.getDayOfWeek() ;
+def texto = 'Este curso me hizo programar mas de lo que me hubiese gustado' ;
+println saludo 
+println texto 
+}
+}
+}
+}
 }
 

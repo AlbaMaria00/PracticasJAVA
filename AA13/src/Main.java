@@ -131,8 +131,6 @@ public class Main {
 		if(!jenkins.exists()) {
 			
 			
-			
-			
 			Path file=Paths.get("JenkinsAA13.txt");
 			
 			List<String> salida=Arrays.asList(textJenkins.toString());
