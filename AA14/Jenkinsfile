@@ -1,0 +1,19 @@
+import java.time.LocalDate
+pipeline{
+agent any
+stages{
+stage ('holaMundo'){
+steps{
+script{
+println '¡Hola, hoy es un dia espectacular para producir chocolate! Mira lo que se ha producido: '
+ println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
+ println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
+ println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
+ println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
+ println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
+ println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
+}
+}
+}
+}
+}
