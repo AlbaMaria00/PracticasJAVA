@@ -41,6 +41,7 @@ public class Ejecutable implements Produccion {
 //			System.out.println("MAYOR");
 		}
 
+		
 	}
 
 	public static ArrayList<Chocolate> generarObjetos() {
