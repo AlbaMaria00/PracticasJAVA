@@ -119,17 +119,15 @@ public class Ejecutable implements Produccion {
 	public static void generaJenkins(List<Chocolate> chocolates) {
 		List<String> jenkText = new ArrayList<>();
 		jenkText.add("import java.time.LocalDate");
-		jenkText.add("pipeline{");// {
+		jenkText.add("pipeline{");
 		jenkText.add("agent any");
-		jenkText.add("stages{");// {
-		jenkText.add("stage ('holaMundo'){");// {
-		jenkText.add("steps{");// {
-		jenkText.add("script{");// {
-		jenkText.add(
-				"println '¡Hola, hoy es un dia espectacular para producir chocolate! Mira lo que se ha producido: '");
+		jenkText.add("stages{");
+		jenkText.add("stage ('holaMundo'){");
+		jenkText.add("steps{");
+		jenkText.add("script{");
+		jenkText.add("println '¡Hola, hoy es un dia espectacular para producir chocolate! Mira lo que se ha producido: '");
 		for (Chocolate chocolate : chocolates) {
-			jenkText.add(
-					" println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '");
+			jenkText.add("println " + chocolate.getNombre() + ' ' + chocolate.getNombre() + ' ' + chocolate.getProduccion() + ";");
 		}
 		jenkText.add("}");
 		jenkText.add("}");
