@@ -111,6 +111,7 @@ public class Main {
 	
 	public static void generarJenkins() {
 		StringBuilder textJenkins=new StringBuilder();
+		textJenkins.append("import java.time.LocalDate\r\n");
 		textJenkins.append("pipeline{\n");
 		textJenkins.append("agent any\n");
 		textJenkins.append("stages{\n");
