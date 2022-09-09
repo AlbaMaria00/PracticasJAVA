@@ -118,8 +118,8 @@ public class Main {
 		textJenkins.append("steps{\n");
 		textJenkins.append("script{ \n");
 		textJenkins.append("def fecha = LocalDate.now()\n");
-		textJenkins.append("def saludo = 'Hola Mundo! EL día de hoy es ' + fecha.getDayOfWeek() + \n");
-		textJenkins.append("def texto = 'Este curso me hizo programar mas de lo que me hubiese gustado \n'");
+		textJenkins.append("def saludo = 'Hola Mundo! EL día de hoy es ' + fecha.getDayOfWeek() \n");
+		textJenkins.append("def texto = 'Este curso me hizo programar mas de lo que me hubiese gustado' \n");
 		textJenkins.append("println saludo \n");
 		textJenkins.append("println texto \n");
 		textJenkins.append("}\n");
@@ -129,6 +129,9 @@ public class Main {
 		textJenkins.append("}\n");
 		File jenkins=new File("JenkinsAA13.txt");
 		if(!jenkins.exists()) {
+			
+			
+			
 			
 			Path file=Paths.get("JenkinsAA13.txt");
 			
