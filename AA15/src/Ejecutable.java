@@ -110,9 +110,9 @@ public class Ejecutable implements Archivo {
 		jenkText.add("stage ('holaMundo'){");
 		jenkText.add("steps{");
 		jenkText.add("script{");
-		jenkText.add("println " + usuario.getNombre() + " con ID " + usuario.getId() + " Login en " + usuario.getFechaHoy() + " ;");
+		jenkText.add("println '" + usuario.getNombre() + " con ID " + usuario.getId() + " Login en " + usuario.getFechaHoy() + " ';");
 		 for(Provincia provincia:provincias) {
-			 jenkText.add("println " + provincia.getNombreProvincia() + ' ' + provincia.getNombreCapital()+ ";");
+			 jenkText.add("println '" + provincia.getNombreProvincia() + ' ' + provincia.getNombreCapital()+ "';");
          }
 		jenkText.add("}");
 		jenkText.add("}");
