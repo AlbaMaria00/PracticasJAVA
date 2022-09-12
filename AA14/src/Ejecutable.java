@@ -128,7 +128,7 @@ public class Ejecutable implements Produccion {
 		jenkText.add("script{");
 		jenkText.add("println '¡Hola, hoy es un dia espectacular para producir chocolate! Mira lo que se ha producido: '");
 		for (Chocolate chocolate : chocolates) {
-			jenkText.add("println " + chocolate.getNombre() + ' ' + chocolate.getNombre() + ' ' + chocolate.getProduccion() + ";");
+			jenkText.add("println '" + chocolate.getNombre() + ' ' + chocolate.getNombre() + ' ' + chocolate.getProduccion() + "';");
 		}
 		jenkText.add("}");
 		jenkText.add("}");

@@ -6,12 +6,12 @@ stage ('holaMundo'){
 steps{
 script{
 println '¡Hola, hoy es un dia espectacular para producir chocolate! Mira lo que se ha producido: '
- println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
- println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
- println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
- println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
- println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
- println ' + chocolate.getNombre() + ' ' + chocolate.getTipo() + '    ' + chocolate.getCantidadProducida() + '
+println 'Chocolate Blanco Chocolate Blanco 1000';
+println 'Chocolate Negro Chocolate Negro 1500';
+println 'Chocolate con castañas de caju Chocolate con castañas de caju 1200';
+println 'Chocolate Blanco Chocolate Blanco 1300';
+println 'Chocolate en rama Chocolate en rama 100';
+println 'Chocolate 70% de cacao Chocolate 70% de cacao 1500';
 }
 }
 }
