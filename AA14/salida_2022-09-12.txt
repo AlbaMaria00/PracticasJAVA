@@ -1,0 +1,8 @@
+NOMBRE 	 	 	 PRODUCCION 
+Chocolate Blanco	1000
+Chocolate Negro	1500
+Chocolate con castañas de caju	1200
+Chocolate Blanco	1300
+Chocolate en rama	100
+Chocolate 70% de cacao	1500
+
