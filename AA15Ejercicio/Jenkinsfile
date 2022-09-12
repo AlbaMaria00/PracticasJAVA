@@ -5,6 +5,9 @@ stage ('holaMundo'){
 steps{
 script{
 <<<<<<< HEAD
+def data = readFile(file:'salida.txt')
+println(data)
+=======
 println 'alba301100 con ID 1 Login en 2022-09-12 ';
 println 'A Coruña A Coruña';
 println 'Alacant Alacant';
@@ -58,61 +61,7 @@ println 'València València';
 println 'Zamora Zamora';
 println 'Zaragoza Zaragoza';
 println 'Ávila Ávila';
-=======
-println alba301100 con ID 1 Login en 2022-09-12 ;
-println A Corunia A Corunia;
-println Alacant Alacant;
-println Albacete Albacete;
-println Almeria Almeria;
-println Araba Araba;
-println Asturias Asturias;
-println Badajoz Badajoz;
-println Barcelona Barcelona;
-println Bizkaia Bizkaia;
-println Burgos Burgos;
-println Cantabria Cantabria;
-println Castello Castello;
-println Ceuta Ceuta;
-println Ciudad Real Ciudad Real;
-println Cuenca Cuenca;
-println Caceres Caceres;
-println Cadiz Cadiz;
-println Cordoba Cordoba;
-println Gipuzcoa Gipuzcoa;
-println Girona Girona;
-println Granada Granada;
-println Guadalajara Guadalajara;
-println Huelva Huelva;
-println Huesca Huesca;
-println Illes Balears Illes Balears;
-println Jaen Jaen;
-println La Rioja La Rioja;
-println Las Palmas Las Palmas;
-println Leon Leon;
-println Lleida Lleida;
-println Lugo Lugo;
-println Madrid Madrid;
-println Melilla Melilla;
-println Murcia Murcia;
-println Malaga Malaga;
-println Navarra Navarra;
-println Ourense Ourense;
-println Palencia Palencia;
-println Pontevedra Pontevedra;
-println Salamanca Salamanca;
-println Santa Cruz de Tenerife Santa Cruz de Tenerife;
-println Segovia Segovia;
-println Sevilla Sevilla;
-println Soria Soria;
-println Tarragona Tarragona;
-println Teruel Teruel;
-println Toledo Toledo;
-println Valladolid Valladolid;
-println Valencia Valencia;
-println Zamora Zamora;
-println Zaragoza Zaragoza;
-println Avila Avila;
->>>>>>> branch 'master' of https://github.com/AlbaMaria00/practicasJAVA.git
+>>>>>>> refs/heads/master
 }
 }
 }
