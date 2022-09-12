@@ -4,10 +4,6 @@ stages{
 stage ('holaMundo'){
 steps{
 script{
-<<<<<<< HEAD
-def data = readFile(file:'salida.txt')
-println(data)
-=======
 println 'alba301100 con ID 1 Login en 2022-09-12 ';
 println 'A Coruña A Coruña';
 println 'Alacant Alacant';
