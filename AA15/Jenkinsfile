@@ -5,7 +5,7 @@ stage ('holaMundo'){
 steps{
 script{
 println alba301100 con ID 1 Login en 2022-09-12 ;
-println A Coruña A Coruña;
+println A Corunia A Corunia;
 println Alacant Alacant;
 println Albacete Albacete;
 println Almería Almería;
@@ -16,13 +16,13 @@ println Barcelona Barcelona;
 println Bizkaia Bizkaia;
 println Burgos Burgos;
 println Cantabria Cantabria;
-println Castelló Castelló;
+println Castello Castello;
 println Ceuta Ceuta;
 println Ciudad Real Ciudad Real;
 println Cuenca Cuenca;
-println Cáceres Cáceres;
-println Cádiz Cádiz;
-println Córdoba Córdoba;
+println Caceres Caceres;
+println Cadiz Cadiz;
+println Cordoba Cordoba;
 println Gipuzcoa Gipuzcoa;
 println Girona Girona;
 println Granada Granada;
