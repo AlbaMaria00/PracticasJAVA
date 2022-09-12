@@ -74,7 +74,7 @@ public class Ejecutable implements Archivo {
 				System.out.println(msj);
 				ej.generaArchivo(msj);
 				
-				generaJenkins();
+				generaJenkins(provincias,user);
 			}
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -102,7 +102,7 @@ public class Ejecutable implements Archivo {
 		}
 	}
 
-	public static void generaJenkins() {
+	public static void generaJenkins(List<Provincia> provincias, Usuario usuario) {
 		List<String> jenkText = new ArrayList<>();
 		jenkText.add("pipeline{");
 		jenkText.add("agent any");
@@ -110,8 +110,10 @@ public class Ejecutable implements Archivo {
 		jenkText.add("stage ('holaMundo'){");
 		jenkText.add("steps{");
 		jenkText.add("script{");
-		jenkText.add("def data = readFile(file:'salida.txt')");
-		jenkText.add("println(data)");
+		jenkText.add("println " + usuario.getNombre() + " con ID " + usuario.getId() + " Login en " + usuario.getFechaHoy() + " ;");
+		 for(Provincia provincia:provincias) {
+			 jenkText.add("println " + provincia.getNombreProvincia() + ' ' + provincia.getNombreCapital()+ ";");
+         }
 		jenkText.add("}");
 		jenkText.add("}");
 		jenkText.add("}");
