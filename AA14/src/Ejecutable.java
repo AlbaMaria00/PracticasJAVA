@@ -48,14 +48,14 @@ public class Ejecutable implements Produccion {
 		ArrayList<Chocolate> chocolates = new ArrayList();
 		Chocolate chBlanco = new Chocolate("Golosina1", "nata", "Chocolate Blanco", 1000);
 		Chocolate chNegro = new Chocolate("Choco", "Chocolate", "Chocolate Negro", 1500);
-		Chocolate chAlmendra = new Chocolate("almendra", "almendrado", "Chocolate con castañas de caju", 1200);
-		Chocolate chCastañas = new Chocolate("Castaña", "castaña", "Chocolate Blanco", 1300);
+		Chocolate chAlmendra = new Chocolate("almendra", "almendrado", "Chocolate con castaï¿½as de caju", 1200);
+		Chocolate chCastanias = new Chocolate("Castaï¿½a", "castaï¿½a", "Chocolate Blanco", 1300);
 		Chocolate chRama = new Chocolate("Golosina3", "chocolate", "Chocolate en rama", 100);
 		Chocolate ch70 = new Chocolate("Golosina3", "chocolate cacao", "Chocolate 70% de cacao", 1500);
 		chocolates.add(chBlanco);
 		chocolates.add(chNegro);
 		chocolates.add(chAlmendra);
-		chocolates.add(chCastañas);
+		chocolates.add(chCastanias);
 		chocolates.add(chRama);
 		chocolates.add(ch70);
 		return chocolates;
@@ -102,7 +102,7 @@ public class Ejecutable implements Produccion {
 		// FECHA ACTUAL//FECHA ACTUAL
 		LocalDate fechaHoy = LocalDate.now();
 		final String nomFichero = "salida_" + fechaHoy + ".txt";
-		// CREACIÓN DEL ARCHIVO
+		// CREACIï¿½N DEL ARCHIVO
 		File archivo = new File(nomFichero);
 		if (!archivo.exists()) {
 			// Creamos la ruta del fichero
@@ -111,7 +111,7 @@ public class Ejecutable implements Produccion {
 			try {
 				Files.write(file, salida, StandardCharsets.UTF_8);
 			} catch (IOException e) {
-				// TODO Bloque catch generado automáticamente
+				// TODO Bloque catch generado automï¿½ticamente
 				e.printStackTrace();
 			}
 		}
@@ -126,7 +126,7 @@ public class Ejecutable implements Produccion {
 		jenkText.add("stage ('holaMundo'){");
 		jenkText.add("steps{");
 		jenkText.add("script{");
-		jenkText.add("println '¡Hola, hoy es un dia espectacular para producir chocolate! Mira lo que se ha producido: '");
+		jenkText.add("println 'ï¿½Hola, hoy es un dia espectacular para producir chocolate! Mira lo que se ha producido: '");
 		for (Chocolate chocolate : chocolates) {
 			jenkText.add("println '" + chocolate.getNombre() + ' ' + chocolate.getNombre() + ' ' + chocolate.getProduccion() + "';");
 		}
