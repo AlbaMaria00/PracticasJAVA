@@ -49,13 +49,21 @@ public class Ejecutable implements Produccion {
 		Chocolate chBlanco = new Chocolate("Golosina1", "nata", "Chocolate Blanco", 1000);
 		Chocolate chNegro = new Chocolate("Choco", "Chocolate", "Chocolate Negro", 1500);
 		Chocolate chAlmendra = new Chocolate("almendra", "almendrado", "Chocolate con casta�as de caju", 1200);
+<<<<<<< HEAD
 		Chocolate chCastanias = new Chocolate("Casta�a", "casta�a", "Chocolate Blanco", 1300);
+=======
+		Chocolate chCastañas = new Chocolate("Casta�a", "casta�a", "Chocolate Blanco", 1300);
+>>>>>>> refs/heads/Desarrollo
 		Chocolate chRama = new Chocolate("Golosina3", "chocolate", "Chocolate en rama", 100);
 		Chocolate ch70 = new Chocolate("Golosina3", "chocolate cacao", "Chocolate 70% de cacao", 1500);
 		chocolates.add(chBlanco);
 		chocolates.add(chNegro);
 		chocolates.add(chAlmendra);
+<<<<<<< HEAD
 		chocolates.add(chCastanias);
+=======
+		chocolates.add(chCastañas);
+>>>>>>> refs/heads/Desarrollo
 		chocolates.add(chRama);
 		chocolates.add(ch70);
 		return chocolates;
