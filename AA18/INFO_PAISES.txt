@@ -1,0 +1,4 @@
+Argentina| America del sur|Buenos Aires|44.000.000|Humedo|1,500
+España|Madrid|Europa|47.350.000|Calido|1,050.00
+Alemania|Europa|Berlin|83.240.000|Frio|1,500.00
+Brasil|America del Sur|Brasilia|212.600.000|Variado|500
